@@ -1,1 +1,1 @@
-# nextjs-typecript-blog
+# nextjs-typescript-blog
