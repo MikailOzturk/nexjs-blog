@@ -2,22 +2,14 @@
 
 import { useState } from "react";
 import Head from "next/head";
-import { NextPage } from "next";
 import mockPosts from "../../utils/posts.json";
 import Layout from "@/components/Layout";
 import Container from "@/components/Container";
 import BlogCard from "@/components/BlogCard/BlogCard";
-
 import SectionHeader from "@/components/SectionHeader";
 
-interface BlogPageProps {
-    category: string;
-    title: string;
-    slug: string;
-
-  }
-  const Posts: NextPage<BlogPageProps> = (props) => {
-  const [posts, setPosts] = useState(mockPosts);
+export default function BackendPosts() {
+  const [posts] = useState(mockPosts);
   return (
     <Layout>
       <Head>
@@ -44,4 +36,3 @@ interface BlogPageProps {
   );
 }
 
-export default Posts;

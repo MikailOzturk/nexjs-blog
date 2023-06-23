@@ -10,7 +10,7 @@ import Container from "@/components/Container";
 
 
 export default function Posts() {
-  const [posts, setPosts] = useState(mockPosts);
+  const [posts] = useState(mockPosts);
   return (
     <Layout>
       <Head>
